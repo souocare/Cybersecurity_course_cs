@@ -54,10 +54,10 @@ def hack_DH(p, x, mensagemA, mensagemB):
 
 
 # Print result of shared key using Diffie-Hellman using key exchange
-print(chave_partilhada_DH(23, 7, 15, 13))
-assert(chave_partilhada_DH(23, 7, 15, 13) == 11)
+print(chave_partilhada_DH(13, 6, 4, 2))
+assert(chave_partilhada_DH(13, 6, 4, 2) == 3)
 
 
 # Print result of private keys using Diffie-Hellman key exchange
-print(hack_DH(23, 7, 14, 20))
-assert(hack_DH(23, 7, 14, 20) == (15, 13))
+print(hack_DH(13, 6, 9, 10))
+assert(hack_DH(23, 7, 9, 10) == (4, 2))
