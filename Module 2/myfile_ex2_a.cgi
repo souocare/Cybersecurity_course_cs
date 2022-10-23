@@ -1,0 +1,1 @@
+echo Content-type: text/plain; echo; /bin/ls -l
