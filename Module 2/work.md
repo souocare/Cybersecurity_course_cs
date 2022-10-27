@@ -110,16 +110,25 @@ Após analisar os logs de ou
 ![alt text](parte2_ex4_3.jpeg "Código com espaços")
 
 
+### Ponto 5
+
 
 ## Dynamic analysis
 
 ### Ponto 6
+![alt text](parte2_ex6.png "Código com espaços")
 
 
 ### Ponto 7
+![alt text](parte2_ex7.png "Código com espaços")
+
+
 
 
 ### Ponto 8
+![alt text](parte2_ex8_1.png "Código com espaços")
+
+![alt text](parte2_ex8_2.png "Código com espaços")
 
 
 ### Ponto 9
