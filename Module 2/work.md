@@ -70,4 +70,42 @@ Pelas razões acima referidas e como foi possivel observar, não é possivel faz
 
 
 
+# Parte B
+
+## Static analysis
+
+### Ponto 2
+
+#### a)
+Nas imagens abaixo, é possivel verificar as alterações da versão 1 para a versão 2:
+
+![alt text](parte2_ex_2_a_1.jpeg "Código com espaços")
+
+![alt text](parte2_ex_2_a_2.jpeg "Código com espaços")
+
+
+#### b)
+Nas imagens abaixo, é possivel verificar a adição do código do workflow trigger.
+
+![alt text](parte2_ex_2_b_1.jpeg "Código com espaços")
+
+![alt text](parte2_ex_2_b_2.jpeg "Código com espaços")
+
+
+### Ponto 3
+
+Após analisar os logs de ou
+
+![alt text](parte2_ex3.png "Código com espaços")
+
+
+### Ponto 4
+
+![alt text](parte2_ex4_1.jpeg "Código com espaços")
+
+
+![alt text](parte2_ex4_2.jpeg "Código com espaços")
+
+
+![alt text](parte2_ex4_3.jpeg "Código com espaços")
 
