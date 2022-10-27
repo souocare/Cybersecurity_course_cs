@@ -109,3 +109,36 @@ Após analisar os logs de ou
 
 ![alt text](parte2_ex4_3.jpeg "Código com espaços")
 
+
+
+## Dynamic analysis
+
+### Ponto 6
+
+
+### Ponto 7
+
+
+### Ponto 8
+
+
+### Ponto 9
+#### a)
+
+#### b)
+
+
+### Ponto 10
+
+
+### Ponto 11
+
+
+### Ponto 12
+
+
+### Ponto 13
+
+
+### Ponto 14
+
