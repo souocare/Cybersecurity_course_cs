@@ -114,8 +114,10 @@ O ficheiro que iremos explorar é denominado search.ts
 
 
 ![alt text](parte2_ex4_3.jpeg "Código com espaços")
-*image_caption*
+<center>Image caption</center>
 
+
+<br>
 
 Justify why CodeQL identified this code
 as vulnerable. Include source and sink information. (more information about SQL Injection can
