@@ -75,9 +75,10 @@ Pelas razões acima referidas e como foi possivel observar, não é possivel faz
 ## Static analysis
 
 ### Ponto 2
-
+Neste ponto 
+Verificar a Github Action para correr a plataforma CWE analytics do CodeQL é executada quando há um evento de push no repositório. Nos sub pontos a e b o CodeQL irá ser atualizado ao mudar a descrição do Workflow.
 #### a)
-Nas imagens abaixo, é possivel verificar as alterações da versão 1 para a versão 2:
+Nas imagens abaixo é possivel verificar as alterações da versão de action 1 para a versão 2:
 
 ![alt text](parte2_ex_2_a_1.jpeg "Código com espaços")
 
@@ -85,7 +86,7 @@ Nas imagens abaixo, é possivel verificar as alterações da versão 1 para a ve
 
 
 #### b)
-Nas imagens abaixo, é possivel verificar a adição do código do workflow trigger.
+Nas imagens abaixo é possivel verificar a adição do código do workflow trigger.
 
 ![alt text](parte2_ex_2_b_1.jpeg "Código com espaços")
 
@@ -94,20 +95,31 @@ Nas imagens abaixo, é possivel verificar a adição do código do workflow trig
 
 ### Ponto 3
 
-Após analisar os logs de ou
+Após executar a action e analisar os logs de output foi encontrado o comando da imagem abaixo utilizado pelo CodeQL Action para inicializar a base de dados de code analysis. 
 
 ![alt text](parte2_ex3.png "Código com espaços")
 
 
 ### Ponto 4
 
+Neste ponto irá ser explorada a vulnerabilidade CWE-89. No code scanning da security está presente uma listagem das diferentes vulnerabilidades detetadas na aplicação com nível decrescente de vulnerabilidade. 
+
+Como se pode observar na imagem seguinte foi pesquisada a entrada “Database query built from user-controlled sources” que apresenta uma lista de diversos ficheiros. 
+
 ![alt text](parte2_ex4_1.jpeg "Código com espaços")
 
+O ficheiro que iremos explorar é denominado search.ts 
 
 ![alt text](parte2_ex4_2.jpeg "Código com espaços")
 
 
 ![alt text](parte2_ex4_3.jpeg "Código com espaços")
+*image_caption*
+
+
+Justify why CodeQL identified this code
+as vulnerable. Include source and sink information. (more information about SQL Injection can
+be found here https
 
 
 ### Ponto 5
