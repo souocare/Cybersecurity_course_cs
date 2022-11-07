@@ -143,13 +143,13 @@ Neste ponto o objetivo era verificar que uma Github Action é executada para cor
 #### a)
 Na Figura 8 é possivel verificar as alterações da versão de action 1 para a versão 2:
 
-<center>
+<p align="center">
+  <img src="parte2_ex_2_a_1.jpeg" alt="drawing" width="300"/>
+</p><p align="center">
+  <img src="parte2_ex_2_a_2.jpeg" alt="drawing" width="300"/>
+</p>
 
-<img src="parte2_ex_2_a_1.jpeg" alt="drawing" width="300"/>
-</center>
-<center>
-<img src="parte2_ex_2_a_2.jpeg" alt="drawing" width="300"/>
-</center>
+
 
 <center>Figura 8 - Alteração da versão de action</center>
 
@@ -159,15 +159,16 @@ Na Figura 8 é possivel verificar as alterações da versão de action 1 para a 
 #### b)
 Na Figura 9 é possivel verificar a adição do código do workflow trigger.
 
-<center>
+<p align="center">
+  <img src="parte2_ex_2_b_1.jpeg" alt="drawing" width="350"/>
+</p>
+<p align="center">
+  <img src="parte2_ex_2_b_2.jpeg" alt="drawing" width="350"/>
+</p>
+<p align="center">
+  Figura 9 - Código do workflow trigger
+</p>
 
-<img src="parte2_ex_2_b_1.jpeg" alt="drawing" width="350"/>
-</center>
-<center>
-<img src="parte2_ex_2_b_2.jpeg" alt="drawing" width="350"/>
-</center>
-<center>
-Figura 9 - Código do workflow trigger </center>
 
 <br>
 
@@ -192,7 +193,6 @@ Neste ponto irá ser explorada a vulnerabilidade CWE-89. No code scanning da sec
 Como se pode observar na Figura 4 foi pesquisada a entrada “Database query built from user-controlled sources” que apresenta uma lista de diversos ficheiros como se pode observar na Figura 11. 
 
 <center>
-
 <img src="parte2_ex4_1.jpeg" alt="drawing" width="350"/>
 </center>
 <center>Figura 11 - Vulnerabilidades de código</center>
@@ -200,8 +200,8 @@ Como se pode observar na Figura 4 foi pesquisada a entrada “Database query bui
 <br>
 O ficheiro que iremos explorar é denominado search.ts (Figura 12).
 
-<center>
 
+<center>
 <img src="parte2_ex4_2.jpeg" alt="drawing" width="350"/>
 </center>
 
@@ -212,10 +212,10 @@ O ficheiro que iremos explorar é denominado search.ts (Figura 12).
 A vulnerabilidade detetada encontra-se na linha sublinhada na Figura 13.
 Uma query SQL sem tratamento e sanitização da sintaxe SQL nos inputs do utilizador, pode levar a que estes inputs sejam interpretados como SQL em vez de dados simples de utilizador. Posto isto, algumas verificações de segurança podem ser ultrapassadas ou comandos adicionais podem ser injetados na query para modificar algo do lado do servidor ou executar operações no back-end.
 
-<center>
 
-<img src="parte2_ex4_3.jpeg" alt="drawing" width="350"/>
-</center>
+<p align="center">
+  <img src="parte2_ex4_3.jpeg" alt="drawing" width="350"/>
+</p>
 
 <center>
 Figura 13 - Vulnerabilidade do ficheiro search</center>
@@ -449,7 +449,7 @@ Figura 31 - Resposta de captcha errado na ferramenta ZAP</center>
 
 Através do "Manual Request Editor" alterou-se o campo do email para "anotheruser @juice.sh.op", alterou-se o UserId e corrigiu-se o valor do captcha para o valor correto "1" (Figura 32).  
 <center>
-<img src="mudança_feedback.png" alt="drawing" width="350"/>
+<img src="mudanca_feedback.png" alt="drawing" width="350"/>
 </center>
 <center>
 Figura 32 - Alteração do pedido de feedback</center>
