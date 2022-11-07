@@ -22,7 +22,10 @@ Neste exercício temos por objetivo criar um ficheiro dentro da pasta /tmp.
 
     curl -H "ATTACK:() { echo hello; }; /bin/bash -c \"touch /tmp/ficheiro\"" localhost:8080/cgi-bin/vul.cgi
 
-![alt text](parte1_ex2_a_1.png "Código com espaços")
+<center>
+<img src="parte1_ex2_a_1.png" alt="drawing"/>
+</center>
+
 <center>Figura 1 - Criação de um ficheiro na pasta /tmp</center>
 
 <br>
@@ -34,8 +37,12 @@ Ao contrário do ponto anterior, neste ponto temos por objetivo remover um fiche
 
     curl -H "ATTACK:() { echo hello; }; /bin/bash -c \"rm /tmp/ficheiro\"" localhost:8080/cgi-bin/vul.cgi
 
-![alt text](parte1_ex2_b_1.png "Código com espaços")
-<center>Figura 2 - Remoção de um ficheiro na pasta /tmp</center>
+<center>
+<img src="parte1_ex2_b_1.png" alt="drawing"/>
+</center>
+
+<center>
+Figura 2 - Remoção de um ficheiro na pasta /tmp</center>
 
 <br>
 
@@ -51,8 +58,12 @@ Após verificar que era possível, executou-se o código testado para o ficheiro
     curl -H "ATTACK:() { echo hello; }; echo Content_type: text/plain; echo; /bin/cat /etc/shadow" localhost:8080/cgi-bin/vul.cgi
 
 
-![alt text](parte1_ex2_c_1.png "Código com espaços")
-<center>Figura 3 - Tentativa de acesso ao ficheiro shadow</center>
+<center>
+<img src="parte1_ex2_c_1.png" alt="drawing"/>
+</center>
+
+<center>
+Figura 3 - Tentativa de acesso ao ficheiro shadow</center>
 
 <br>
 
@@ -60,16 +71,24 @@ Como se pode observar, o primeiro ficheiro tinha dados e os mesmos foram impress
 
 Para garantir que o ficheiro tinha conteúdo, abriu-se o docker em modo interativo e fez-se o cat desse mesmo ficheiro, como mostra Figura 4.
 
-![alt text](parte1_ex2_c_2.png "Código com espaços")
-<center>Figura 4 - Conteúdo do ficheiro shadow </center>
+<center>
+<img src="parte1_ex2_c_2.png" alt="drawing"/>
+</center>
+
+<center>
+Figura 4 - Conteúdo do ficheiro shadow </center>
 
 <br>
 Para entender as permissões de leitura e escrita deste ficheiro, foram executados dois códigos apresentados na Figura 5. Um deles mostrou qual o USER atual e outro para saber quais as permissões do ficheiro.
 
 <br>
 
-![alt text](parte1_ex2_c_3.png "Código com espaços")
-<center>Figura 5 - USER e permissões do ficheiro</center>
+<center>
+<img src="parte1_ex2_c_3.png" alt="drawing"/>
+</center>
+
+<center>
+Figura 5 - USER e permissões do ficheiro</center>
 
 <br>
 
@@ -88,8 +107,12 @@ O código seguinte foi o utilizado para executar o ataque.
 
 Na Figura 6 podemos observar o resultado do código, onde é indicado que um url não aceita espaços. 
 
-![alt text](parte1_ex2_d_1.png "Código com espaços")
-<center>Figura 6 - Tentativa de lançar um ataque Shellshock</center>
+<center>
+<img src="parte1_ex2_d_1.png" alt="drawing"/>
+</center>
+
+<center>
+Figura 6 - Tentativa de lançar um ataque Shellshock</center>
 
 <br>
 
@@ -99,8 +122,12 @@ Os espaços mencionados anteriormente são ignorados e o sistema apenas lê o qu
 
 O resultado é o apresentado na Figura 7.
 
-![alt text](parte1_ex2_d_2.png "Código com espaços")
-<center>Figura 7 - Segunda tentativa de lançar um ataque Shellshock </center>
+<center>
+<img src="parte1_ex2_d_2.png" alt="drawing"/>
+</center>
+
+<center>
+Figura 7 - Segunda tentativa de lançar um ataque Shellshock </center>
 
 <br>
 
@@ -116,9 +143,13 @@ Neste ponto o objetivo era verificar que uma Github Action é executada para cor
 #### a)
 Na Figura 8 é possivel verificar as alterações da versão de action 1 para a versão 2:
 
-![alt text](parte2_ex_2_a_1.jpeg "Código com espaços")
+<center>
 
-![alt text](parte2_ex_2_a_2.jpeg "Código com espaços")
+<img src="parte2_ex_2_a_1.jpeg" alt="drawing" width="300"/>
+</center>
+<center>
+<img src="parte2_ex_2_a_2.jpeg" alt="drawing" width="300"/>
+</center>
 
 <center>Figura 8 - Alteração da versão de action</center>
 
@@ -128,10 +159,15 @@ Na Figura 8 é possivel verificar as alterações da versão de action 1 para a 
 #### b)
 Na Figura 9 é possivel verificar a adição do código do workflow trigger.
 
-![alt text](parte2_ex_2_b_1.jpeg "Código com espaços")
+<center>
 
-![alt text](parte2_ex_2_b_2.jpeg "Código com espaços")
-<center>Figura 9 - Código do workflow trigger </center>
+<img src="parte2_ex_2_b_1.jpeg" alt="drawing" width="350"/>
+</center>
+<center>
+<img src="parte2_ex_2_b_2.jpeg" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 9 - Código do workflow trigger </center>
 
 <br>
 
@@ -139,8 +175,12 @@ Na Figura 9 é possivel verificar a adição do código do workflow trigger.
 
 Após executar a action e analisar os logs de output foi encontrado o comando a azul presente na Figura 10 que é utilizado pelo CodeQL Action para inicializar a base de dados de code analysis. 
 
-![alt text](parte2_ex3.png "Código com espaços")
-<center>Figura 10 - Inicialização da base de dados de code analysis</center>
+<center>
+<img src="parte2_ex3.png" alt="drawing" width="400"/>
+</center>
+
+<center>
+Figura 10 - Inicialização da base de dados de code analysis</center>
 
 <br>
 
@@ -151,15 +191,20 @@ Neste ponto irá ser explorada a vulnerabilidade CWE-89. No code scanning da sec
 
 Como se pode observar na Figura 4 foi pesquisada a entrada “Database query built from user-controlled sources” que apresenta uma lista de diversos ficheiros como se pode observar na Figura 11. 
 
+<center>
 
-
-![alt text](parte2_ex4_1.jpeg "Código com espaços")
+<img src="parte2_ex4_1.jpeg" alt="drawing" width="350"/>
+</center>
 <center>Figura 11 - Vulnerabilidades de código</center>
 
 <br>
 O ficheiro que iremos explorar é denominado search.ts (Figura 12).
 
-![alt text](parte2_ex4_2.jpeg "Código com espaços")
+<center>
+
+<img src="parte2_ex4_2.jpeg" alt="drawing" width="350"/>
+</center>
+
 <center>Figura 12 - Ficheiro search</center>
 
 <br>
@@ -167,8 +212,13 @@ O ficheiro que iremos explorar é denominado search.ts (Figura 12).
 A vulnerabilidade detetada encontra-se na linha sublinhada na Figura 13.
 Uma query SQL sem tratamento e sanitização da sintaxe SQL nos inputs do utilizador, pode levar a que estes inputs sejam interpretados como SQL em vez de dados simples de utilizador. Posto isto, algumas verificações de segurança podem ser ultrapassadas ou comandos adicionais podem ser injetados na query para modificar algo do lado do servidor ou executar operações no back-end.
 
-![alt text](parte2_ex4_3.jpeg "Código com espaços")
-<center>Figura 13 - Vulnerabilidade do ficheiro search</center>
+<center>
+
+<img src="parte2_ex4_3.jpeg" alt="drawing" width="350"/>
+</center>
+
+<center>
+Figura 13 - Vulnerabilidade do ficheiro search</center>
 
 <br>
 
@@ -191,8 +241,11 @@ Um falso negativo acontece quando uma vulnerabilidade existente não é assinala
 
 Após colocar o endereço  http://10.62.73.125:4005 no browser, verificámos que a aplicação estava a correr devidamente, como se pode observar na Figura 14.
 
-![alt text](parte2_ex6.png "Código com espaços")
-<center>Figura 14 - Acesso à aplicação Juice Shop</center>
+<center>
+<img src="parte2_ex6.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 14 - Acesso à aplicação Juice Shop</center>
 
 <br>
 
@@ -203,9 +256,11 @@ Com as ferramentas do browser acedeu-se aos ficheiros javascript carregados pelo
 
 No ficheiro "main.js" foi encontrado o caminho para o score-board e inseriu-se no browser, concluindo o objetivo.
 
-
-![alt text](parte2_ex7.png "Código com espaços")
-<center>Figura 15 - Caminho para o score-board</center>
+<center>
+<img src="parte2_ex7.png" alt="drawing" width="400"/>
+</center>
+<center>
+Figura 15 - Caminho para o score-board</center>
 
 <br>
 
@@ -216,13 +271,19 @@ Neste exercício foi realizado um ataque de injeção SQL sobre o formulário de
 
 Na tentativa de realizar login sem saber o email ou palavra passe, foi executado o comando " ' OR TRUE -- " que altera a lógica da query que recebe o input do utilizador e permite o inicio de sessão como administrador. Na Figura 17 é apresentado o sucesso do ataque.
 
-![alt text](parte2_ex8_1.png "Código com espaços")
-<center>Figura 16 - Comando a ser injetado</center>
+<center>
+<img src="parte2_ex8_1.png" alt="drawing" width="250"/>
+</center>
+<center>
+Figura 16 - Comando a ser injetado</center>
 
 <br>
 
-![alt text](parte2_ex8_2.png "Código com espaços")
-<center>Figura 17 - Login com sucesso como administrador</center>
+<center>
+<img src="parte2_ex8_2.png" alt="drawing" width="300"/>
+</center>
+<center>
+Figura 17 - Login com sucesso como administrador</center>
 
 <br>
 
@@ -235,16 +296,22 @@ Nesta parte do trabalho será utilizada a ferramenta Zed Attack Proxy (ZAP) que 
 
 Após ter instalado a ferramenta, foi verificado se o site de exemplo estava acessível através da exploração manual, com o HUD ativo e no browser firefox. Resultando na Figura 18.
 
-![alt text](zap_funcional.png "Código com espaços")
-<center>Figura 18 - Acesso ao site de exemplo</center>
+<center>
+<img src="zap_funcional.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 18 - Acesso ao site de exemplo</center>
 
 <br>
 
 #### b)
 De seguida acedeu-se ao website Juice Shop através da ferramenta ZAP (Figura 19). 
 
-![alt text](zap_juice_shop.png "Código com espaços")
-<center>Figura 19 - Acesso ao site Juice Shop</center>
+<center>
+<img src="zap_juice_shop.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 19 - Acesso ao site Juice Shop</center>
 
 <br>
 
@@ -255,60 +322,81 @@ Neste ponto é pretendido o acesso à página do utilizador administrador descob
 
 Em primeiro lugar houve uma tentativa de login com a palavra "admin" seguida de 111, como demonstra a Figura 20.
 
-![alt text](teste_login.png "Código com espaços")
-<center>Figura 20 - Tentativa de login para intersecção do ZAP</center>
+<center>
+<img src="teste_login.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 20 - Tentativa de login para intersecção do ZAP</center>
 
 <br>
 
 O pedido executado foi intercetado na ferramenta ZAP como demonstrado na Figura 21.
 
-![alt text](zap_login.png "Código com espaços")
-<center>Figura 21 - Pedido de login na ferramenta ZAP</center>
+<center>
+<img src="zap_login.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 21 - Pedido de login na ferramenta ZAP</center>
 
 <br>
 
 Através do fuzzing é possível testar automaticamente todas as combinações de números com 3 dígitos até chegar à que permite efetuar o login. Para executar o fuzzing, foi adicionado um payload que efetua as combinações numéricas entre 0 e 999. 
 
-![alt text](payload.png "Código com espaços")
-<center>Figura 22 - Adição de payload no fuzzer</center>
+<center>
+<img src="payload.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 22 - Adição de payload no fuzzer</center>
 
 <br>
 
 Após colocar o fuzzer em execução, como se pode observar na Figura 23, os valores testados estão todos com acesso sem autorização à exceção de um que indica que foi encontrada a password correta.
 
-![alt text](pedidos_fuzz.png "Código com espaços")
-<center>Figura 23 - Execução do fuzzer</center>
+<center>
+<img src="pedidos_fuzz.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 23 - Execução do fuzzer</center>
 
 <br>
 
 Ao selecionar o pedido que obteve sucesso, o payload é analisado e concluiu-se que a combinação de dígitos que permite efetuar o login como administrador é "123". 
 
-![alt text](PAYLOAD_correto.png "Código com espaços")
-<center>Figura 24 - Pedido fuzzer processado com sucesso</center>
+<center>
+<img src="PAYLOAD_correto.png" alt="drawing"/>
+</center>
+<center>
+Figura 24 - Pedido fuzzer processado com sucesso</center>
 
 <br>
 
 Como se pode observar na Figura 25, o login na aplicação foi efetuado com sucesso ao utilizar a combinação de email "admin@juice-sh-op" e password "admin123".
 
-![alt text](login_sucesso.png "Código com espaços")
-<center>Figura 25 - Login com email e password</center>
+<center>
+<img src="login_sucesso.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 25 - Login com email e password</center>
 
 <br>
 
 ### Ponto 11
 
 Neste ponto irá perceber-se como é que uma pesquisa é efetuada. Inicia-se a procura de produtos com limão e como demonstra a Figura 26, o URL é alterado automaticamente e o produto é mostrado.
-
-
-![alt text](lemon.png "Código com espaços")
-<center>Figura 26 - Pesquisa de limão com sucesso</center>
+<center>
+<img src="lemon.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 26 - Pesquisa de limão com sucesso</center>
 
 <br>
 
 De seguida foi testada a pesquisa de "Lemon1" diretamente na barra de pesquisa e não existem produtos com essa identificação.
-
-![alt text](lemon1.png "Código com espaços")
-<center>Figura 27 - Pesquisa de Lemon1 sem sucesso</center>
+<center>
+<img src="lemon1.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 27 - Pesquisa de Lemon1 sem sucesso</center>
 
 <br>
 
@@ -322,8 +410,11 @@ Tendo em conta a possível vulnerabilidade detetada no ponto anterior é pretend
 
 É possível observar o sucesso do desafio na Figura 28.
 
-![alt text](injecao_javascript.png "Código com espaços")
-<center>Figura 28 - Injeção do código</center>
+<center>
+<img src="injecao_javascript.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 28 - Injeção do código</center>
 
 <br>
 
@@ -333,39 +424,53 @@ Foi explorado o desafio "Post some feedback in another users name" utilizando o 
 
 Para conseguir visualizar o pedido para a aplicação na ferramenta ZAP foi efetuado o preenchimento do formulário de feedback com uma resposta propositadamente errada no captcha (Figura 29).
 
-
-![alt text](feedback.png "Código com espaços")
-<center>Figura 29 - Preenchimento de formulário de feedback</center>
+<center>
+<img src="feedback.png" alt="drawing" width="250"/>
+</center>
+<center>
+Figura 29 - Preenchimento de formulário de feedback</center>
 <br>
 
 Na Figura 30 e 31 é possível visualizar o pedido efetuado e a resposta respetiva onde é indicado que o captcha foi preenchido incorretamente.
-
-![alt text](pedido_feedback.png "Código com espaços")
-<center>Figura 30 - Pedido de feedback na ferramenta ZAP</center>
+<center>
+<img src="pedido_feedback.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 30 - Pedido de feedback na ferramenta ZAP</center>
 
 <br>
-
-![alt text](resposta_feedback.png "Código com espaços")
-<center>Figura 31 - Resposta de captcha errado na ferramenta ZAP</center>
+<center>
+<img src="resposta_feedback.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 31 - Resposta de captcha errado na ferramenta ZAP</center>
 
 <br>
 
 Através do "Manual Request Editor" alterou-se o campo do email para "anotheruser @juice.sh.op", alterou-se o UserId e corrigiu-se o valor do captcha para o valor correto "1" (Figura 32).  
-
-![alt text](mudança_feedback.png "Código com espaços")
-<center>Figura 32 - Alteração do pedido de feedback</center>
-
-<br>
-
-A resposta que previamente apresentava um valor de captcha errado, agora demonstra que o pedido foi aceite e processado (Figura 33). Na Figura 34 é comprovado que o feedback foi postado com o utilizador com o email "anotheruser @juice.sh.op", concluindo o desafio.
-
-![alt text](feedback_aceiteOutrouser.png "Código com espaços")
-<center>Figura 33 - Resposta à alteração do pedido de feedback</center>
+<center>
+<img src="mudança_feedback.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 32 - Alteração do pedido de feedback</center>
 
 <br>
 
-![alt text](prova_Correto.png "Código com espaços")
-<center>Figura 34 - Feedback postado</center>
+A resposta que previamente apresentava um valor de captcha errado, agora demonstra que o pedido foi aceite e processado (Figura 33). Na Figura 34 é comprovado que o feedback foi postado com o utilizador com o email "anotheruser@juice-sh.op", concluindo o desafio.
+
+<center>
+<img src="feedback_aceiteOutrouser.png" alt="drawing" width="350"/>
+</center>
+<center>
+Figura 33 - Resposta à alteração do pedido de feedback</center>
+
+<br>
+
+<center>
+<img src="prova_Correto.png" alt="drawing" width="450"/>
+</center>
+<center>
+Figura 34 - Feedback postado</center>
 
 <br>
 
